@@ -26,10 +26,16 @@ public class ProgDepartment {
 	    }
 	    
 	    System.out.println("\n=== TEST 3: department insert ====");
-	    Department newDep = new Department(7, "Devs");
+	    Department newDep = new Department(8, "Devs");
 	    depDao.insert(newDep);
 	    System.out.println("Inserted! new id = " + newDep.getId());
 	    
+	    System.out.println("\n=== TEST 4: department update ====");
+	    dep = depDao.findById(6);
+	    dep.setName("Fitter");
+	    depDao.update(dep);
+	    System.out.println("Update completed!");
+	    	    
 		sc.close();
 		}
 
