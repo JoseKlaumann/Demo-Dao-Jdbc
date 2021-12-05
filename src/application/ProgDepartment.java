@@ -24,7 +24,12 @@ public class ProgDepartment {
 	    for (Department obj : list) {
 	    	System.out.println(obj);
 	    }
-		
+	    
+	    System.out.println("\n=== TEST 3: department insert ====");
+	    Department newDep = new Department(7, "Devs");
+	    depDao.insert(newDep);
+	    System.out.println("Inserted! new id = " + newDep.getId());
+	    
 		sc.close();
 		}
 
