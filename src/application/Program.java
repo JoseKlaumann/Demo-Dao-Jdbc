@@ -46,7 +46,7 @@ public class Program {
 	    System.out.println("Update completed!");
 	    
 	    System.out.println("\n=== TEST 6: seller delete ====");
-	    System.out.print("Enter if for delete test: ");
+	    System.out.print("Enter id for delete test: ");
 	    int id = sc.nextInt();
 	    sellerDao.deleteById(id);
 	    System.out.println("Delete completed!");
